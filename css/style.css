@@ -5,7 +5,7 @@
     display: none;
 }
 :root{
---Gradient: hsl(6, 100%, 80%)tohsl(335, 100%, 65%);
+--Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
 --PaleBlue: hsl(243, 100%, 93%);
 --GrayishBlue: hsl(229, 7%, 55%);
 --DarkBlue: hsl(228, 56%, 26%);
@@ -25,6 +25,10 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+@font-face {
+    font-family: 'raleway',sans-serif;
+    src: url(/fonts/Raleway[wght].ttf);
 }
 @media only screen and (min-width:320px){
     .container{
@@ -77,10 +81,13 @@ body{
         border:2px solid blue;
         background-color: var(--DarkBlue);
         height: 15vh;
-        font-family: '',sans-serif;
+        font-family: 'raleway',sans-serif;
+        border-radius: 6px;
+        padding-bottom: 30px;
     }
     .right p{
         color: aliceblue;
+        font-weight: 400;
     }
     .right2{
         text-align: center;
@@ -89,6 +96,7 @@ body{
         justify-content: center;
         align-items: center;
         border:2px solid white;
+        
     }
     .right2 .youve{
         color: var(--GrayishBlue);
@@ -96,10 +104,44 @@ body{
     .right2 span{
         color: var(--PaleBlue);
     }
+    .right2 .white{
+        position: absolute;
+        bottom: 15%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .right2 .white p{
+        color: var(--DarkBlue);
+    }
+    .right2 .white span{
+        color: var(--DarkBlue);
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    .right .right2 .dashes{
+        text-align: right;
+        background-color: var(--DarkBlue);
+        width: 100%;
+        padding: 5px;
+        border: 2px solid red;
+    }
+    /*
+    .right .right2 .dashes1{
+        background: var(--Gradient);
+        padding: 5px;
+        width: 100%;
+    }
+    .right .right2 .dashes2{
+        background-color: white;
+        width: 100%;
+    }*/
     .right .right2 .zeroGB{
         display: flex;
         justify-content: space-between;
         border:2px solid red;
+        font-size: 14px;
         width: 100%;
     }
 }
