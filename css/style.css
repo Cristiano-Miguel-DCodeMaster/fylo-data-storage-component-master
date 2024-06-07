@@ -127,8 +127,7 @@ body{
         padding: 5px;
         border: 2px solid red;
     }
-    /*
-    .right .right2 .dashes1{
+    /*.right .right2 .dashes1{
         background: var(--Gradient);
         padding: 5px;
         width: 100%;
@@ -136,12 +135,12 @@ body{
     .right .right2 .dashes2{
         background-color: white;
         width: 100%;
-    }*/
+    }
     .right .right2 .zeroGB{
         display: flex;
         justify-content: space-between;
         border:2px solid red;
         font-size: 14px;
         width: 100%;
-    }
+    }*/
 }
