@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+--Gradient: hsl(6, 100%, 80%)tohsl(335, 100%, 65%);
+--PaleBlue: hsl(243, 100%, 93%);
+--GrayishBlue: hsl(229, 7%, 55%);
+--DarkBlue: hsl(228, 56%, 26%);
+--VeryDarkBlue: hsl(229, 57%, 11%);
+}
+body{
+    background-color:black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    border:2px solid red;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (min-width:320px){
+    .container{
+        background-image: url(/images/bg-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: fit-content;
+        gap: 20px;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 30vh;
+        border:2px solid yellow;
+        border-radius: 12px 100px 12px 12px;
+        padding: 5px;
+        justify-content: center;
+        align-items:flex-start;
+        background-color: var(--DarkBlue);
+    }
+    .left .left1,.left2{
+        margin-left: 10%;
+    }
+    .left2{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 55%;
+    }
+    .left2 img{
+        background-color: var(--VeryDarkBlue);
+        padding: 7px;
+        border-radius: 6px;
+    }
+    .right{
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        border:2px solid blue;
+        background-color: var(--DarkBlue);
+        height: 15vh;
+        font-family: '',sans-serif;
+    }
+    .right p{
+        color: aliceblue;
+    }
+    .right2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border:2px solid white;
+    }
+    .right2 .youve{
+        color: var(--GrayishBlue);
+    }
+    .right2 span{
+        color: var(--PaleBlue);
+    }
+    .right .right2 .zeroGB{
+        display: flex;
+        justify-content: space-between;
+        border:2px solid red;
+        width: 100%;
+    }
+}
