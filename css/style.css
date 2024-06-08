@@ -5,9 +5,9 @@
     display: none;
 }
 :root{
---Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+--Gradient: hsl(6, 100%, 80%),hsl(335, 100%, 65%);
 --PaleBlue: hsl(243, 100%, 93%);
---GrayishBlue: hsl(229, 7%, 55%);
+--GrayishBlue: hsl(232, 8%, 63%);
 --DarkBlue: hsl(228, 56%, 26%);
 --VeryDarkBlue: hsl(229, 57%, 11%);
 }
@@ -19,15 +19,8 @@ body{
     height: 100vh;
     border:2px solid red;
 }
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
 @font-face {
-    font-family: 'raleway',sans-serif;
+    font-family: 'raleway';
     src: url(/fonts/Raleway[wght].ttf);
 }
 @media only screen and (min-width:320px){
@@ -39,6 +32,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'raleway';
     }
     section{
         display: flex;
@@ -53,7 +47,6 @@ body{
         flex-direction: column;
         gap: 20px;
         height: 30vh;
-        border:2px solid yellow;
         border-radius: 12px 100px 12px 12px;
         padding: 5px;
         justify-content: center;
@@ -66,27 +59,27 @@ body{
     .left2{
         display: flex;
         justify-content: space-between;
-        gap: 10px;
+        gap: 14px;
         width: 55%;
     }
     .left2 img{
         background-color: var(--VeryDarkBlue);
         padding: 7px;
         border-radius: 6px;
+        width: 20%;
+        height: 5vh;
     }
     .right{
         padding: 1px;
         display: flex;
         justify-content: center;
-        border:2px solid blue;
         background-color: var(--DarkBlue);
         height: 15vh;
-        font-family: 'raleway',sans-serif;
         border-radius: 6px;
-        padding-bottom: 30px;
+        padding-bottom: 45px;
     }
     .right p{
-        color: aliceblue;
+        color: var(--PaleBlue);
         font-weight: 400;
     }
     .right2{
@@ -95,52 +88,139 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border:2px solid white;
-        
+        gap: 5px;
+        text-align: center;
+        width: 90%;
+        padding-top: 20px;
     }
     .right2 .youve{
         color: var(--GrayishBlue);
+        font-size: 14px;
     }
     .right2 span{
         color: var(--PaleBlue);
+        font-weight: 600;
     }
     .right2 .white{
         position: absolute;
-        bottom: 15%;
+        bottom: 12%;
         background-color: white;
         padding: 20px;
         border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
     .right2 .white p{
         color: var(--DarkBlue);
     }
     .right2 .white span{
-        color: var(--DarkBlue);
+        color: var(--VeryDarkBlue);
         font-weight: 600;
-        font-size: 25px;
+        font-size: 29px;
     }
-    
-    .right .right2 .dashes{
+    .right2 .dashes0{
         text-align: right;
-        background-color: var(--DarkBlue);
-        width: 100%;
-        padding: 5px;
-        border: 2px solid red;
+        background-color: var(--VeryDarkBlue);
+        width: 98%;
+        padding: 2px;
+        justify-content: start;
+        align-items: start;
+        border-radius: 12px;
     }
-    /*.right .right2 .dashes1{
-        background: var(--Gradient);
-        padding: 5px;
-        width: 100%;
+    .right2 .dashes0 .dashes1{
+        background: linear-gradient(var(--Gradient));
+        padding: 2px;
+        width: 73%;
+        border-radius: 12px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
     }
-    .right .right2 .dashes2{
+    .right .right2 .dashes0 .dashes2{
         background-color: white;
-        width: 100%;
+        width: 1%;
+        padding: 5px;
+        border-radius: 100vmax;
     }
     .right .right2 .zeroGB{
         display: flex;
         justify-content: space-between;
-        border:2px solid red;
         font-size: 14px;
-        width: 100%;
-    }*/
+        width: 96%;
+        font-weight: bolder;
+    }
+    .right2 .white .eight{
+        font-size: 30px;
+    }
+    .right2 .white .five{
+        font-size: 30px;
+    }
+    .right2 .white .gbleft{
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+@media only screen and (min-width:375px){
+    section{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:375px) and (min-height:667px){
+    section{
+        width: 89%;
+    }
+    .left2 img{
+        width: 24%;
+        height: 5vh;
+    }
+    .right2 .youve{
+        font-size: 16px;
+    }
+    .right2 .white{
+        bottom: 16%;
+    }
+    .right2 .white span{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .right2 .dashes0{
+        width: 96%;
+        padding: 4px;
+    }
+    .right2 .dashes0 .dashes1{padding: 4px;
+        width: 80%;
+    }
+    .right .right2 .zeroGB{
+        font-size: 16px;
+    }
+    .right2 .white .gbleft{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width:412px){
+    section{
+        width: 70%;
+    }
+}
+@media only screen and (min-width:600px){
+    section{
+        width: 56%;
+    }
+}
+@media only screen and (min-width:768px){
+    section{
+        width: 40%;
+    }
+}
+@media only screen and (min-width:850px){
+    section{
+        width: 35%;
+    }
+}
+@media only screen and (min-width:992px){
+    section{
+        flex-direction: row;
+    }
 }
