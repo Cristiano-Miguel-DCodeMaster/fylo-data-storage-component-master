@@ -20,11 +20,11 @@ body{
 }
 @font-face {
     font-family: 'raleway';
-    src: url(/fonts/Raleway[wght].ttf);
+    src: url("../fonts/Raleway[wght].ttf");
 }
 @media only screen and (min-width:320px){
     .container{
-        background-image: url(/images/bg-mobile.png);
+        background-image: url(../images/bg-mobile.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -226,7 +226,7 @@ body{
         position: absolute;
         height: 50vh;
         bottom: 0;
-        background-image: url(/images/bg-desktop.png);
+        background-image: url(../images/bg-desktop.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
